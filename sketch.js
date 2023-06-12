@@ -1,5 +1,3 @@
-let espLarg = 20;
-let espAltura = 20;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -7,7 +5,7 @@ function setup() {
   stroke(255);
   strokeWeight(2);
   noFill();
-  background(0);
+  background(255);
 }
 
 function draw() {
@@ -16,7 +14,14 @@ function draw() {
     for (let j = 1; j < espAltura; j++) {
       push();
       translate(i * width / espLarg,j * height / espAltura)
-      circle(0, 0, height / espAltura);
+    fill(0,191,255)
+    circle (200, 100, 200)
+
+    fill(0,0,0)
+    circle (170, 70, 20)
+
+    fill(0,0,0)
+    circle (220, 70, 20)
       pop();
     }
   }
